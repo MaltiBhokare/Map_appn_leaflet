@@ -10,7 +10,7 @@ const corsOptions = {
   allowedHeaders: "Content-Type,Authorization", // Allow specific headers
 };
 
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
