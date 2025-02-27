@@ -1,0 +1,146 @@
+/* MapComponent.css - Modern & Animated UI */
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.input-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-controls input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    width: 260px;
+    transition: 0.3s;
+    outline: none;
+}
+
+.input-controls input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+
+/* Current Location Button */
+.btn.location {
+    background: linear-gradient(135deg, #28a745, #218838);
+}
+
+.btn.location:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(40, 167, 69, 0.4);
+}
+
+
+.input-controls button,
+.btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-controls button:hover,
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 123, 255, 0.4);
+}
+
+/* Buttons Section */
+.controls {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Switch Button */
+.btn.switch {
+    background: linear-gradient(135deg, #ff6b6b, #d63031);
+}
+
+.btn.switch:hover {
+    transform: rotate(180deg);
+}
+
+/* Map Container */
+.map-wrapper {
+    width: 90%;
+    height: 65vh;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.map-wrapper:hover {
+    transform: scale(1.02);
+}
+
+/* Map */
+.map {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* Popup Message */
+.message {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

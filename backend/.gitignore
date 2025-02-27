@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+logs/
+debug.log
+error.log
+
+# dotenv environment variables
+.env
+
+# Build directories
+dist/
+build/
+
+# Temporary files
+.tmp/
+.cache/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor & IDE settings
+.vscode/
+.idea/
+
+# MongoDB database dumps
+dump/
+
+# Ignore coverage reports
+coverage/
