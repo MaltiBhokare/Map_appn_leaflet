@@ -4,7 +4,13 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+  origin: "https://map-appn-leaflet-fk3.vercel.app", // Your frontend domain
+  methods: "GET,POST,PUT,DELETE", // Allow specific HTTP methods
+  allowedHeaders: "Content-Type,Authorization", // Allow specific headers
+};
+
+// app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
